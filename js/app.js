@@ -1,8 +1,8 @@
 $(document).ready(function() {
   var myString = "";
-  function fizzBuzz() {
+  function fizzBuzz(num) {
   	val = ""
-	for (var i = 1; i <= 100; i++) {
+	for (var i = 1; i <= num; i++) {
 	    myString += '<p>';
     	if(i%3 === 0){
 			myString += 'Fizz';
@@ -17,5 +17,6 @@ $(document).ready(function() {
 	}
 	$('body').append(myString);
   } 
-fizzBuzz();
+var n = prompt("Please enter the number you would like to count to.");
+fizzBuzz(n);
 });
